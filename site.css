@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.start__list {
+  height: 1024px;
+  background-image: url(img/Rectangle1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.title {
+  padding-top: 217px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+.text {
+  padding-top: 32px;
+  width: 481px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 177.778% */
+}
+
+.span {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.button {
+  margin-top: 44px;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background: #9C0332;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.5s;
+}
+.button:hover {
+  background: #EB443F;
+}
+
+.game__box {
+  height: 556px;
+  flex-shrink: 0;
+  background: #000915;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 128px;
+}
+
+.game__item {
+  position: relative;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%/cover no-repeat;
+  height: 300px;
+  grid-column: span 4;
+}
+
+.game__img {
+  width: auto;
+  height: 100%;
+  border-radius: 16px;
+  transition: border 0.3s;
+}
+.game__img:hover {
+  border: 3px solid #44D2FF;
+}
+
+.game__text {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* 133.333% */
+}/*# sourceMappingURL=site.css.map */
