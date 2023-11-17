@@ -3,10 +3,10 @@ alert(a);
 a = 20;
 alert(a);
 
-let year = prompt("год выпуска первого айфона");
+const year = prompt("год выпуска первого айфона");
 alert(year);
 
-let author = prompt("имя создателя языка JavaScript");
+const author = prompt("имя создателя языка JavaScript");
 alert(author);
 
 let x = 10;
