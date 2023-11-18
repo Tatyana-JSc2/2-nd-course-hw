@@ -51,5 +51,43 @@ switch (monthNumber) {
         break;
 }
 
+/*дополнительно*/
+let evenOdd = Number(prompt('Пожалуйста, введите любое число'));
+alert(evenOdd);
+if (isNaN(evenOdd)) {
+    alert('Число введено некорректно');
+}
+else {
+    if (evenOdd % 2 === 0) {
+        alert('Число четное');
+    } else {
+        alert('Число нечетное');
+    }
+}
+
+let clientOS = Number(prompt('введите 0 - для операционной системы iOS, или 1 - для операционной системы Android'));
+if (clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке')
+} else if (clientOS === 1) {
+    alert('Установите версию приложения для Android по ссылке')
+} else {
+    alert('вы ввели что-то не то')
+}
+
+let clientOs = Number(prompt('введите 0 - для операционной системы iOS, или 1 - для операционной системы Android'));
+if (isNaN(clientOs) || clientOs < 0 || clientOs > 1) {
+    alert('операционная система введена некорректно');
+} else {
+    let clientDeviceYear = Number(prompt('введите год создания вашего телефона'));
+    if (isNaN(clientDeviceYear) || clientDeviceYear > 2023 || clientDeviceYear < 2007) {
+        alert('год создания вашего телефона введен некорректно');
+    } else if (clientOs === 0) {
+        let year = clientDeviceYear >= 2015 ? alert('Установите версию приложения для iOS по ссылке') : alert('Установите облегченную версию приложения для iOS по ссылке');
+    } else {
+        let year = clientDeviceYear >= 2015 ? alert('Установите версию приложения для Android по ссылке') : alert('Установите облегченную версию приложения для Android по ссылке');
+    }
+}
+
+
 
 
