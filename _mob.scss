@@ -1,3 +1,15 @@
+@media (max-width: 965px) {
+    .seasons {
+        justify-content: center;
+        padding-bottom: 233px;
+
+    }
+
+    .seasons__item {
+        align-items: center;
+    }
+}
+
 @media (max-width: 767px) {
     .center {
         padding-left: calc(50% - 343px/2);
@@ -7,10 +19,12 @@
     .start__list {
         height: 735px;
         background-position: 31%;
+        gap: 33px;
     }
 
     .title {
         padding-top: 239px;
+        margin-bottom: unset;
         text-align: center;
         font-size: 32px;
 
@@ -30,7 +44,6 @@
     }
 
     .button {
-        margin-top: 32px;
         align-self: center;
     }
 
@@ -43,13 +56,53 @@
     .game__item {
         width: 343px;
     }
+
+    .seasons {
+        padding-bottom: 85px;
+    }
+
+    .seasons__item {
+        margin-top: unset;
+        margin-bottom: unset;
+        padding-top: 51px;
+        padding-bottom: 64px;
+        align-items: center;
+    }
+
+    .header {
+        text-align: center;
+        color: #FFF;
+        font-size: 32px;
+    }
+
+    .picture {
+        width: 344px;
+        height: 236px;
+    }
 }
 
+
+
 @media (max-width: 343px) {
+    .game__box {
+        justify-items: center;
+
+    }
+
     .game__item {
         width: 100vw;
+        height: unset;
     }
+
     .game__img {
         width: 100vw;
-    }    
+    }
+
+    .picture {
+        width: 100vw;
+    }
+
+    .button {
+        width: 100vw;
+    }
 }
