@@ -117,7 +117,7 @@ a {
   /* 133.333% */
 }
 
-.seasons {
+.element {
   /*height: 1024px;*/
   background: #000915;
   display: flex;
@@ -126,7 +126,7 @@ a {
   align-items: center;
 }
 
-.seasons__item {
+.element__item {
   margin-top: 249px;
   margin-bottom: 237px;
   padding-top: 33px;
@@ -147,11 +147,12 @@ a {
 }
 
 @media (max-width: 965px) {
-  .seasons {
+  .element {
     justify-content: center;
+    flex-direction: column-reverse;
     padding-bottom: 233px;
   }
-  .seasons__item {
+  .element__item {
     align-items: center;
   }
 }
@@ -192,15 +193,18 @@ a {
   .game__item {
     width: 343px;
   }
-  .seasons {
+  .element {
     padding-bottom: 85px;
   }
-  .seasons__item {
+  .element__item {
     margin-top: unset;
     margin-bottom: unset;
     padding-top: 51px;
     padding-bottom: 64px;
     align-items: center;
+  }
+  .words {
+    padding-bottom: 90px;
   }
   .header {
     text-align: center;
