@@ -24,7 +24,7 @@ for (let worker in salary) {
     alert(`${worker} — зарплата ${salary[worker]} долларов.`);
 }
 
-for (let n = 1000, num = 0; n > 50; num++) {
+for (let n = 1000, num = 1; n > 50; num++) {
     n /= 2;
     if (n < 50) {
         console.log(`результат деления = ${n}`);
