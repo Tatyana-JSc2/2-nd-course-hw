@@ -13,6 +13,23 @@ let startSeasons = () => {
             return 'номер месяца введен неверно';
         }
     }
-    console.log(monthNumber());
+    alert(monthNumber());
 }
+
+
+function filterFruit() {
+    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arr = arr.sort(() => Math.random() - 0.5);
+    alert(arr);
+    let Guess1 = prompt('Чему равнялся первый элемент массива?');
+    let Guess2 = prompt('Чему равнялся последний элемент массива?');
+    if (arr[0].toLowerCase() === (Guess1.toLowerCase()) && arr[6].toLowerCase() === (Guess2.toLowerCase())) {
+        alert('Поздравляем, Вы угадали!');
+    }
+    else if
+        (arr[0].toLowerCase() === (Guess1.toLowerCase()) || arr[6].toLowerCase() === (Guess2.toLowerCase())) {
+        alert('Вы были близки к победе!');
+    } else alert('Вы ответили неверно');
+}
+
 

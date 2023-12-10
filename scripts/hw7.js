@@ -93,3 +93,6 @@ let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + 
 console.log(fullDate);
 console.log(fullTime);
 
+
+
+
